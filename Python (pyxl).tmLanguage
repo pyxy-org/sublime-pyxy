@@ -7,7 +7,7 @@
         <string>py</string>
     </array>
     <key>firstLineMatch</key>
-    <string># coding: pyxl</string>
+    <string># coding: pyxy</string>
     <key>foldingStartMarker</key>
     <string>^\s*(def|class)\s+([.a-zA-Z0-9_ &lt;]+)\s*(\((.*)\))?\s*:|\{\s*$|\(\s*$|\[\s*$|^\s*"""(?=.)(?!.*""")</string>
     <key>foldingStopMarker</key>
@@ -15,12 +15,12 @@
     <key>keyEquivalent</key>
     <string>^~P</string>
     <key>name</key>
-    <string>Python (pyxl)</string>
+    <string>Python (pyxy)</string>
     <key>patterns</key>
     <array>
         <dict>
             <key>include</key>
-            <string>#pyxl</string>
+            <string>#pyxy</string>
         </dict>
         <dict>
             <key>include</key>
@@ -3919,35 +3919,35 @@
                 </dict>
             </array>
         </dict>
-        <key>pyxl</key>
+        <key>pyxy</key>
         <dict>
           <key>name</key>
-          <string>meta.pyxl.python</string>
+          <string>meta.pyxy.python</string>
           <key>patterns</key>
           <array>
             <dict>
               <key>include</key>
-              <string>#pyxl-tag-open</string>
+              <string>#pyxy-tag-open</string>
             </dict>
             <dict>
               <key>include</key>
-              <string>#pyxl-tag-comment</string>
+              <string>#pyxy-tag-comment</string>
             </dict>
             <dict>
               <key>include</key>
-              <string>#pyxl-tag-close</string>
+              <string>#pyxy-tag-close</string>
             </dict>
             <dict>
               <key>include</key>
-              <string>#pyxl-tag-invalid</string>
+              <string>#pyxy-tag-invalid</string>
             </dict>
             <dict>
               <key>include</key>
-              <string>#pyxl-html-comment</string>
+              <string>#pyxy-html-comment</string>
             </dict>
           </array>
         </dict>
-        <key>pyxl-entities</key>
+        <key>pyxy-entities</key>
         <dict>
           <key>patterns</key>
           <array>
@@ -3978,7 +3978,7 @@
             </dict>
           </array>
         </dict>
-        <key>pyxl-string-double-quoted</key>
+        <key>pyxy-string-double-quoted</key>
         <dict>
           <key>begin</key>
           <string>"</string>
@@ -4004,17 +4004,17 @@
           <array>
             <dict>
               <key>name</key>
-              <string>string.quoted.double.pyxl</string>
+              <string>string.quoted.double.pyxy</string>
               <key>match</key>
               <string>([^{}"]*)</string>
             </dict>
             <dict>
                 <key>include</key>
-                <string>#pyxl-evaluated-code</string>
+                <string>#pyxy-evaluated-code</string>
             </dict>
           </array>
         </dict>
-        <key>pyxl-string-single-quoted</key>
+        <key>pyxy-string-single-quoted</key>
         <dict>
           <key>begin</key>
           <string>'</string>
@@ -4040,17 +4040,17 @@
           <array>
             <dict>
               <key>name</key>
-              <string>string.quoted.single.pyxl</string>
+              <string>string.quoted.single.pyxy</string>
               <key>match</key>
               <string>([^{}']*)</string>
             </dict>
             <dict>
                 <key>include</key>
-                <string>#pyxl-evaluated-code</string>
+                <string>#pyxy-evaluated-code</string>
             </dict>
           </array>
         </dict>
-        <key>pyxl-evaluated-code</key>
+        <key>pyxy-evaluated-code</key>
         <dict>
           <key>name</key>
           <string>meta.expression</string>
@@ -4061,7 +4061,7 @@
             <key>0</key>
             <dict>
               <key>name</key>
-              <string>meta.brace.curly.pyxl</string>
+              <string>meta.brace.curly.pyxy</string>
             </dict>
           </dict>
           <key>end</key>
@@ -4071,7 +4071,7 @@
             <key>0</key>
             <dict>
               <key>name</key>
-              <string>meta.brace.curly.pyxl</string>
+              <string>meta.brace.curly.pyxy</string>
             </dict>
           </dict>
           <key>patterns</key>
@@ -4082,7 +4082,7 @@
             </dict>
           </array>
         </dict>
-        <key>pyxl-html-comment</key>
+        <key>pyxy-html-comment</key>
         <dict>
             <key>begin</key>
             <string>&lt;!--</string>
@@ -4112,7 +4112,7 @@
                 </dict>
             </array>
         </dict>
-        <key>pyxl-tag-attribute-name</key>
+        <key>pyxy-tag-attribute-name</key>
         <dict>
           <key>captures</key>
           <dict>
@@ -4127,36 +4127,36 @@
           <key>name</key>
           <string>meta.tag.attribute-name.python</string>
         </dict>
-        <key>pyxl-tag-attributes</key>
+        <key>pyxy-tag-attributes</key>
         <dict>
           <key>patterns</key>
           <array>
             <dict>
               <key>include</key>
-              <string>#pyxl-evaluated-code</string>
+              <string>#pyxy-evaluated-code</string>
             </dict>
             <dict>
               <key>include</key>
-              <string>#pyxl-tag-attribute-name</string>
+              <string>#pyxy-tag-attribute-name</string>
             </dict>
             <dict>
               <key>include</key>
-              <string>#pyxl-string-double-quoted</string>
+              <string>#pyxy-string-double-quoted</string>
             </dict>
             <dict>
               <key>include</key>
-              <string>#pyxl-string-single-quoted</string>
+              <string>#pyxy-string-single-quoted</string>
             </dict>
           </array>
         </dict>
-        <key>pyxl-tag-close</key>
+        <key>pyxy-tag-close</key>
         <dict>
           <key>captures</key>
           <dict>
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>punctuation.definition.tag.begin.pyxl</string>
+              <string>punctuation.definition.tag.begin.pyxy</string>
             </dict>
             <key>2</key>
             <dict>
@@ -4166,7 +4166,7 @@
             <key>3</key>
             <dict>
               <key>name</key>
-              <string>punctuation.definition.tag.end.pyxl</string>
+              <string>punctuation.definition.tag.end.pyxy</string>
             </dict>
           </dict>
           <key>match</key>
@@ -4174,14 +4174,14 @@
           <key>name</key>
           <string>tag.close.python</string>
         </dict>
-        <key>pyxl-tag-invalid</key>
+        <key>pyxy-tag-invalid</key>
         <dict>
           <key>match</key>
           <string>&lt;\s*&gt;</string>
           <key>name</key>
           <string>invalid.illegal.tag.incomplete.python</string>
         </dict>
-        <key>pyxl-tag-open</key>
+        <key>pyxy-tag-open</key>
         <dict>
           <key>begin</key>
           <string>(&lt;)([a-zA-Z0-9:_]+)</string>
@@ -4190,7 +4190,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>punctuation.definition.tag.begin.pyxl</string>
+              <string>punctuation.definition.tag.begin.pyxy</string>
             </dict>
             <key>2</key>
             <dict>
@@ -4205,7 +4205,7 @@
             <key>1</key>
             <dict>
               <key>name</key>
-              <string>punctuation.definition.tag.end.pyxl</string>
+              <string>punctuation.definition.tag.end.pyxy</string>
             </dict>
           </dict>
           <key>name</key>
@@ -4214,7 +4214,7 @@
           <array>
             <dict>
               <key>include</key>
-              <string>#pyxl-tag-attributes</string>
+              <string>#pyxy-tag-attributes</string>
             </dict>
             <dict>
               <key>captures</key>
@@ -4234,7 +4234,7 @@
         </dict>
     </dict>
     <key>scopeName</key>
-    <string>source.python.pyxl</string>
+    <string>source.python.pyxy</string>
     <key>uuid</key>
     <string>6e447a14-61f9-4e26-a38b-b5600845220b</string>
 </dict>
