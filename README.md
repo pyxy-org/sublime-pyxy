@@ -1,12 +1,7 @@
 sublime-pyxy
 ============
 
-<p align="center">
-    <em>
-        Originally created for PyXL: [yyjhao/sublime-pyxl](https://github.com/yyjhao/sublime-pyxl)
-    </em>
-</p>
-<hr>
+Originally created for pyxl: [yyjhao/sublime-pyxl](https://github.com/yyjhao/sublime-pyxl)
 
 This is a work-in-progress.
 
